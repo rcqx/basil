@@ -9,9 +9,9 @@ class User < ApplicationRecord
 
   validates :name, presence: true, length: { in: 2..25 }
 
-  # before_create :generate_authentication_token
+  before_create :generate_authentication_token
 
-  # def generate_authentication_token
-  #   self.authentication_token = Devise.friendly_token
-  # end
+  def generate_authentication_token
+    self.authentication_token = Devise.friendly_token
+  end
 end
