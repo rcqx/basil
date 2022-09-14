@@ -4,7 +4,14 @@
 <% if @groups.length.zero? %>
   <h3 style="text-align: center; margin-top: 17em;">Start by adding a new category</h3>
 <% else%>
-   <h1><%= @groups.length %></h1>
+  <% @groups.each do |item| %>
+    <%= link_to group_bills_path(item.id) do %>
+      <div class="group-card">
+        <div><%= item.name%></div>
+        <div><%= item.icon %></div>
+      </div>
+    <% end %>
+  <% end %>
 <% end %>
 </div>
 
