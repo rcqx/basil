@@ -1,0 +1,20 @@
+<%= render "nav_layout" %>
+
+<div class="groups-container">
+<% if @groups.length.zero? %>
+  <h3 style="text-align: center; margin-top: 17em;">Start by adding a new category</h3>
+<% else%>
+   <h1><%= @groups.length %></h1>
+<% end %>
+</div>
+
+<%
+=begin%>
+ 
+<% if current_user%>
+  <%= button_to "Sign out", destroy_user_session_path, method: :delete, data:{turbo:false} %>
+<% end %> 
+<%
+=end%>
+
+<%= render "foot" %>
