@@ -139,9 +139,16 @@ footer button {
   padding-right: 2em;
 }
 
-.login-container h2 {
+.login-container h1 {
   color: #3778C2;
   font-weight: bolder;
+  width: 100%;
+  font-size: 7.25em;
+  text-align: center;
+  width: 90%;
+  text-shadow: black 3px 0 5px;
+  margin: 0;
+  padding-bottom: 1rem;
 }
 
 .field-name {

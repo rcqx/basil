@@ -1,7 +1,7 @@
 class BillsController < ApplicationController
   def index
     @group = Group.find(params[:group_id])
-    @group_bill = GroupBill.where(group_id: params[:group_id])
+    @group_bill = GroupBill.includes([:bill]).where(group_id: params[:group_id])
     @sum = 0
     @group_bill.each { |item| @sum+=item.bill.amount }
   end
