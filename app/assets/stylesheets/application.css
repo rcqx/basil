@@ -38,10 +38,7 @@ ol, ul {
 
 blockquote, q {
 	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {.bills-container 
+}inputtainer 
 	content: '';
 	content: none;
 }
@@ -130,4 +127,152 @@ footer button {
   width: 95vw;
   padding: 1em;
   background-color: white;
+}
+
+.login-container {
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.login-container h2 {
+  color: #3778C2;
+  font-weight: bolder;
+}
+
+.field-name {
+  width: 80vw;
+}
+
+.field-name > input {
+  width: 90%;
+  padding: 0.75em;
+  margin-bottom: 0.5em;
+  border-radius: 0.5em;
+  border: 3px solid #5FB523;
+  font-size: medium;
+}
+
+.field-name > input::placeholder {
+  font-size: 1.15em;
+  padding: 0;
+  margin: 0;
+}
+
+
+.field-email {
+  width: 80vw;
+}
+
+.field-email > input {
+  width: 90%;
+  padding: 0.75em;
+  margin-bottom: 0.5em;
+  border-radius: 0.5em;
+  border: 3px solid #5FB523;
+  font-size: medium;
+}
+
+.field-email > input::placeholder {
+  font-size: 1.15em;
+  padding: 0;
+  margin: 0;
+}
+
+.field-email > input:focus,
+.field-pass > input:focus,
+.field-name > input:focus {
+  outline: #3778C2;
+}
+
+.field-pass > input {
+  width: 90%;
+  padding: 0.75em;
+  margin-bottom: 0.5em;
+  border-radius: 0.5em;
+  border: 3px solid #5FB523;
+  font-size: medium
+}
+
+.field-pass > input::placeholder {
+  font-size: 1.15em;
+  padding: 0;
+  margin: 0;
+}
+
+.field-input > a {
+  padding: 1em;
+}
+
+.login-container > a {
+  color: black;
+  font-size: 1em;
+  margin: 0.75em;
+}
+
+.login-container > * {
+  margin: 0.25em;
+}
+
+.field-checkbox {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+
+.actions > input {
+  padding: 0.75em;
+  width: 98%;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #3778C2;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+}
+
+.signout {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signout button {
+  width: 80vw;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: #3778C2;
+  border: none;
+  font-size: 1.25em;
+  font-weight: bolder;
+  color: white;
+}
+
+.signup {
+  border: 3px solid red;
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.signup h2 {
+  color: #3778C2;
+  font-weight: bolder;
+  margin: 0.5em;
+}
+
+.signout-nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.signout-nav i {
+  padding-left: 0.5em;
 }

@@ -1,3 +1,7 @@
-<% if current_user%>
-  <%= button_to "Sign out", destroy_user_session_path, method: :delete, data:{turbo:false} %>
-<% end %>  
+<%= render "nav" %>
+
+<div class="signout">
+  <% if current_user%>
+    <%= button_to "Sign out", destroy_user_session_path, method: :delete, data:{turbo:false} %>
+  <% end %> 
+</div> 
