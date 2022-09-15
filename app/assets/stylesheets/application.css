@@ -41,7 +41,7 @@ blockquote, q {
 }
 
 blockquote:before, blockquote:after,
-q:before, q:after {
+q:before, q:after {.bills-container 
 	content: '';
 	content: none;
 }
@@ -115,4 +115,19 @@ footer button {
 
 .group-card > * {
   margin-right: 0.5em;
+}
+
+.bill-container {
+  width: 85%;
+  padding: 1em;
+  margin: 0.25em;
+  background-color: white;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.total {
+  border-bottom: 1px solid lightgray;
+  width: 95vw;
+  padding: 1em;
+  background-color: white;
 }
