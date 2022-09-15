@@ -23,6 +23,8 @@ class GroupsController < ApplicationController
 
   def show; end
 
+  def log_out; end
+
   private
 
   def group_params
