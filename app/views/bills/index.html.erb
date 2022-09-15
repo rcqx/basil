@@ -1,0 +1,13 @@
+<%= render "nav" %>
+
+<div class="bills-container">
+    <h3 class="total">Grand total: $<%= @sum %></h3>
+      <% @group_bill.each do |item| %>
+          <div class="bill-container">
+            <%= item.bill.name %>:
+            $<%= item.bill.amount %>
+          </div>
+      <% end %>
+</div>
+
+<%= render "foot" %>

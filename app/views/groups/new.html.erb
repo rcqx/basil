@@ -1,0 +1,15 @@
+<h4>Add a new category</h4>
+
+<%= form_with url: groups_path, method: :post, local: true, scope: :add_group do |form| %>
+    <div>
+      <%= form.label :name %><br>
+      <%= form.text_field :name, size: "80x6" %>
+    </div>
+    
+    <div>
+      <%= form.label :icon %><br>
+      <%= form.select :icon, @icons.map { |i| [i.to_s, i.to_s] }, {}%>
+    </div>
+
+    <%= form.submit 'Add category' %>
+<% end %>
