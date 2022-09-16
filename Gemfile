@@ -54,6 +54,9 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'rspec-rails'
   gem 'bullet'
+  gem 'database_cleaner'
+  gem 'factory_bot_rails', '~> 6.2'
+  gem 'capybara'
 end
 
 group :development do
@@ -65,4 +68,11 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+end
+
+group :test do
+  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem 'rails-controller-testing'
+  gem 'selenium-webdriver'
+  gem 'webdrivers'
 end
