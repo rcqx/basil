@@ -1,0 +1,15 @@
+<%= form_with url: group_bills_path, method: :post, local: true, scope: :add_bill do |form| %>
+
+    <div>
+      <%= form.label :name %><br>
+      <%= form.text_field :name %>
+    </div>
+  
+    <div>
+      <%= form.label :amount %><br>
+      <%= form.text_field :amount %>
+    </div>
+
+    <%= form.submit 'Create' %>
+  <% end %>
+  

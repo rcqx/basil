@@ -1,0 +1,27 @@
+// USERS TABLE 
+
+rails g migration CreateUsers
+
+rails g migration AddNameToUsers name:string
+
+// BILLS TABLE 
+
+rails g migration CreateBills
+
+rails g migration AddDetailsToBills name:string amount:decimal
+
+rails g migration AddUserRefToBills user:references
+
+// GROUP TABLE
+
+rails g migration CreateGroups
+
+rails g migration AddDetailsToGroups name:string icon:string
+
+rails g migration AddUserRefToGroups user:references
+
+// GROUP-BILLS JOINING TABLE
+
+rails g migration CreateGroupBills
+
+rails g migration AddRefToGroupBills

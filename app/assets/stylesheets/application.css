@@ -1,15 +1,355 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  /* font-size: 100%; */
+
+  /* font: inherit; */
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* --------------------------------------------------------- */
+
+nav {
+  height: 4em;
+  display: flex;
+  background-color: #3778c2;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.25em;
+}
+
+footer {
+  height: 11%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5fb523;
+}
+
+footer button {
+  padding: 1em;
+  font-size: 1.2em;
+  background-color: #5fb523;
+  border: 2px solid white;
+  width: 19em;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.groups-container,
+.bills-container {
+  border: 2px solid white;
+  min-height: 80%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.group-card {
+  padding: 1em;
+  display: flex;
+  font-size: 1.1em;
+  color: black;
+  justify-content: flex-start;
+  align-items: center;
+  width: 85vw;
+  background-color: white;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  margin-top: 0.5em;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.group-card > * {
+  margin-right: 0.5em;
+}
+
+.bill-container {
+  width: 85%;
+  padding: 1em;
+  margin: 0.25em;
+  background-color: white;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.total {
+  border-bottom: 1px solid lightgray;
+  width: 95vw;
+  padding: 1em;
+  background-color: white;
+}
+
+.login-container {
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.login-container h1 {
+  color: #3778c2;
+  font-weight: bolder;
+  font-size: 7.25em;
+  text-align: center;
+  width: 90%;
+  text-shadow: black 3px 0 5px;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.field-name {
+  width: 80vw;
+}
+
+.field-name > input {
+  width: 90%;
+  padding: 0.75em;
+  margin-bottom: 0.5em;
+  border-radius: 0.5em;
+  border: 3px solid #5fb523;
+  font-size: medium;
+}
+
+.field-name > input::placeholder {
+  font-size: 1.15em;
+  padding: 0;
+  margin: 0;
+}
+
+.field-email {
+  width: 80vw;
+}
+
+.field-email > input {
+  width: 90%;
+  padding: 0.75em;
+  margin-bottom: 0.5em;
+  border-radius: 0.5em;
+  border: 3px solid #5fb523;
+  font-size: medium;
+}
+
+.field-email > input::placeholder {
+  font-size: 1.15em;
+  padding: 0;
+  margin: 0;
+}
+
+.field-pass > input {
+  width: 90%;
+  padding: 0.75em;
+  margin-bottom: 0.5em;
+  border-radius: 0.5em;
+  border: 3px solid #5fb523;
+  font-size: medium;
+}
+
+.field-pass > input::placeholder {
+  font-size: 1.15em;
+  padding: 0;
+  margin: 0;
+}
+
+.actions > input {
+  padding: 0.75em;
+  width: 98%;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #3778c2;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+}
+
+.field-email > input:focus,
+.field-pass > input:focus,
+.field-name > input:focus {
+  outline: #3778c2;
+}
+
+.field-input > a {
+  padding: 1em;
+}
+
+.login-container > a {
+  color: black;
+  font-size: 1em;
+  margin: 0.75em;
+}
+
+.login-container > * {
+  margin: 0.25em;
+}
+
+.field-checkbox {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+
+.signout {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signout button {
+  width: 80vw;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: #3778c2;
+  border: none;
+  font-size: 1.25em;
+  font-weight: bolder;
+  color: white;
+}
+
+.signup {
+  border: 3px solid red;
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup h2 {
+  color: #3778c2;
+  font-weight: bolder;
+  margin: 0.5em;
+}
+
+.signout-nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.signout-nav i {
+  padding-left: 0.5em;
+}
