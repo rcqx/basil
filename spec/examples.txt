@@ -1,0 +1,14 @@
+example_id                                      | status | run_time        |
+----------------------------------------------- | ------ | --------------- |
+./spec/models/bill_spec.rb[1:1]                 | passed | 0.00241 seconds |
+./spec/models/bill_spec.rb[1:2]                 | passed | 0.0081 seconds  |
+./spec/models/bill_spec.rb[1:3]                 | passed | 0.00089 seconds |
+./spec/models/group_bill_spec.rb[1:1]           | passed | 0.0078 seconds  |
+./spec/models/group_bill_spec.rb[1:2]           | passed | 0.01153 seconds |
+./spec/models/group_spec.rb[1:1]                | passed | 0.00266 seconds |
+./spec/models/group_spec.rb[1:2]                | passed | 0.00264 seconds |
+./spec/models/user_spec.rb[1:1]                 | passed | 0.00097 seconds |
+./spec/requests/groups_spec.rb[1:1:1]           | passed | 0.09047 seconds |
+./spec/requests/groups_spec.rb[1:2:1]           | passed | 0.00472 seconds |
+./spec/requests/groups_spec.rb[1:2:2]           | passed | 0.00779 seconds |
+./spec/system_integration/groups_spec.rb[1:1:1] | passed | 2.33 seconds    |

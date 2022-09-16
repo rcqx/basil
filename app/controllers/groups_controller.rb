@@ -18,10 +18,12 @@ class GroupsController < ApplicationController
   def destroy; end
 
   def index
-    @groups = Group.all
+    @groups = Group.where(user: current_user)
   end
 
   def show; end
+
+  def log_out; end
 
   private
 
