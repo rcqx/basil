@@ -1,51 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	/* font-size: 100%; */
-	/* font: inherit; */
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  /* font-size: 100%; */
+
+  /* font: inherit; */
+  vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
   font-family: 'Roboto', sans-serif;
   height: 100vh;
 }
 
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}inputtainer 
-	content: '';
-	content: none;
+ol,
+ul {
+  list-style: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* --------------------------------------------------------- */
@@ -53,7 +126,7 @@ table {
 nav {
   height: 4em;
   display: flex;
-  background-color: #3778C2;
+  background-color: #3778c2;
   justify-content: space-around;
   align-items: center;
   color: white;
@@ -71,13 +144,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#5FB523;
+  background-color: #5fb523;
 }
 
 footer button {
   padding: 1em;
   font-size: 1.2em;
-  background-color:#5FB523;
+  background-color: #5fb523;
   border: 2px solid white;
   width: 19em;
   color: white;
@@ -107,7 +180,7 @@ footer button {
   margin-left: 0.25em;
   margin-right: 0.25em;
   margin-top: 0.5em;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .group-card > * {
@@ -119,7 +192,7 @@ footer button {
   padding: 1em;
   margin: 0.25em;
   background-color: white;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .total {
@@ -140,9 +213,8 @@ footer button {
 }
 
 .login-container h1 {
-  color: #3778C2;
+  color: #3778c2;
   font-weight: bolder;
-  width: 100%;
   font-size: 7.25em;
   text-align: center;
   width: 90%;
@@ -160,7 +232,7 @@ footer button {
   padding: 0.75em;
   margin-bottom: 0.5em;
   border-radius: 0.5em;
-  border: 3px solid #5FB523;
+  border: 3px solid #5fb523;
   font-size: medium;
 }
 
@@ -169,7 +241,6 @@ footer button {
   padding: 0;
   margin: 0;
 }
-
 
 .field-email {
   width: 80vw;
@@ -180,7 +251,7 @@ footer button {
   padding: 0.75em;
   margin-bottom: 0.5em;
   border-radius: 0.5em;
-  border: 3px solid #5FB523;
+  border: 3px solid #5fb523;
   font-size: medium;
 }
 
@@ -190,25 +261,36 @@ footer button {
   margin: 0;
 }
 
-.field-email > input:focus,
-.field-pass > input:focus,
-.field-name > input:focus {
-  outline: #3778C2;
-}
-
 .field-pass > input {
   width: 90%;
   padding: 0.75em;
   margin-bottom: 0.5em;
   border-radius: 0.5em;
-  border: 3px solid #5FB523;
-  font-size: medium
+  border: 3px solid #5fb523;
+  font-size: medium;
 }
 
 .field-pass > input::placeholder {
   font-size: 1.15em;
   padding: 0;
   margin: 0;
+}
+
+.actions > input {
+  padding: 0.75em;
+  width: 98%;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #3778c2;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+}
+
+.field-email > input:focus,
+.field-pass > input:focus,
+.field-name > input:focus {
+  outline: #3778c2;
 }
 
 .field-input > a {
@@ -230,17 +312,6 @@ footer button {
   padding-bottom: 1em;
 }
 
-.actions > input {
-  padding: 0.75em;
-  width: 98%;
-  border-radius: 0.5em;
-  border: none;
-  background-color: #3778C2;
-  font-size: 1em;
-  color: white;
-  font-weight: bold;
-}
-
 .signout {
   height: 100vh;
   display: flex;
@@ -252,7 +323,7 @@ footer button {
   width: 80vw;
   padding: 1em;
   border-radius: 0.5em;
-  background-color: #3778C2;
+  background-color: #3778c2;
   border: none;
   font-size: 1.25em;
   font-weight: bolder;
@@ -268,9 +339,8 @@ footer button {
   align-items: center;
 }
 
-
 .signup h2 {
-  color: #3778C2;
+  color: #3778c2;
   font-weight: bolder;
   margin: 0.5em;
 }

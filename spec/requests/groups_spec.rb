@@ -11,7 +11,6 @@ RSpec.describe 'groups_controller_requests', type: :request do
     it 'is receiving an Ok response from the server' do
       expect(response).to have_http_status(302)
     end
-
   end
 
   describe 'GET #show' do
