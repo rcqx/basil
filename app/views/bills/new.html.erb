@@ -1,5 +1,10 @@
-<%= form_with url: group_bills_path, method: :post, local: true, scope: :add_bill do |form| %>
+<%= render "billnav" %>
 
+<div class="add-bill-container">
+
+  <h4>ADD A NEW BILL</h4>
+
+  <%= form_with url: group_bills_path, method: :post, local: true, scope: :add_bill do |form| %>
     <div>
       <%= form.label :name %><br>
       <%= form.text_field :name %>
@@ -10,6 +15,7 @@
       <%= form.text_field :amount %>
     </div>
 
-    <%= form.submit 'Create' %>
+    <%= form.submit 'Create', :class => 'createBill' %>
   <% end %>
-  
+
+</div>

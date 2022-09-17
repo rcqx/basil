@@ -1,15 +1,18 @@
-<h4>Add a new category</h4>
+<%= render "nav" %>
 
-<%= form_with url: groups_path, method: :post, local: true, scope: :add_group do |form| %>
-    <div>
-      <%= form.label :name %><br>
-      <%= form.text_field :name, size: "80x6" %>
-    </div>
-    
-    <div>
-      <%= form.label :icon %><br>
-      <%= form.select :icon, @icons.map { |i| [i.to_s, i.to_s] }, {}%>
-    </div>
+<div class="add-new-container">
 
-    <%= form.submit 'Add category' %>
-<% end %>
+  <h4>ADD A NEW CATEGORY</h4>
+
+  <%= form_with url: groups_path, method: :post, local: true, scope: :add_group do |form| %>
+      <div>
+        <%= form.text_field :name, placeholder: "Name" %>
+      </div>
+
+      <div>
+        <%= form.select :icon, @icons.map { |i| [i.to_s, i.to_s] }, {}%>
+      </div>
+
+      <%= form.submit 'CREATE CATEGORY', :class => 'submitBtn' %>
+  <% end %>
+</div>

@@ -122,7 +122,6 @@ table {
 }
 
 /* --------------------------------------------------------- */
-
 nav {
   height: 4em;
   display: flex;
@@ -287,6 +286,55 @@ footer button {
   font-weight: bold;
 }
 
+.add-new-container {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.add-new-container h4 {
+  padding: 1em;
+}
+
+.add-new-container input,
+.add-new-container select {
+  padding: 1em;
+  width: 100%;
+  margin-bottom: 1em;
+  font-size: 1.15em;
+}
+
+.add-bill-container {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.add-bill-container h4 {
+  padding: 1em;
+}
+
+.add-bill-container input,
+.add-bill-container select {
+  padding: 1em;
+  width: 100%;
+  margin-bottom: 1em;
+  font-size: 1.15em;
+}
+
+.createBill {
+  padding: 1em;
+  font-size: 1.2em;
+  background-color: #5fb523;
+  border: 2px solid white;
+  width: 19em;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .field-email > input:focus,
 .field-pass > input:focus,
 .field-name > input:focus {
@@ -331,7 +379,6 @@ footer button {
 }
 
 .signup {
-  border: 3px solid red;
   height: 99vh;
   display: flex;
   flex-direction: column;
@@ -352,4 +399,15 @@ footer button {
 
 .signout-nav i {
   padding-left: 0.5em;
+}
+
+.submitBtn {
+  padding: 1em;
+  font-size: 1.2em;
+  background-color: #5fb523;
+  border: 2px solid white;
+  width: 19em;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
