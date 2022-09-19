@@ -2,6 +2,11 @@
 
 > Basil is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
+![image](https://user-images.githubusercontent.com/58822719/190934207-8480b5a4-d811-4bdd-9647-c4b7acbc85e3.png)
+![image](https://user-images.githubusercontent.com/58822719/190934224-5a56847e-d68d-438d-9226-7af411287502.png)
+![image](https://user-images.githubusercontent.com/58822719/190934253-38f22f6f-30f3-4929-b9da-5dee14cc095a.png)
+![image](https://user-images.githubusercontent.com/58822719/190934263-a44b280f-30a2-4f9b-982f-96950ad36c9f.png)
+
 [Live here](https://quiet-bastion-30880.herokuapp.com/users/sign_in)
 
 ## Getting Started
