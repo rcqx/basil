@@ -161,7 +161,6 @@ footer button {
 
 .wrapper {
   border: 2px solid #3778c2;
-  height: 100vh;
   width: 390px;
   height: 100vh;
 }
@@ -175,6 +174,7 @@ footer button {
   flex-direction: column;
   align-items: center;
 }
+
 .bills-container h3 {
   width: 90%;
 }
