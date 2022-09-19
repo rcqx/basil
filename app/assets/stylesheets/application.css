@@ -406,12 +406,17 @@ footer button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2em;
 }
 
 .signup h2 {
   color: #3778c2;
   font-weight: bolder;
   margin: 0.5em;
+}
+
+.signup > * {
+  width: 310px;
 }
 
 .signout-nav {
